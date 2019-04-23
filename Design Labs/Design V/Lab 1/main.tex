@@ -1,0 +1,151 @@
+\documentclass{article}
+\usepackage{bigstrut}
+\usepackage{adjustbox}
+\usepackage{graphicx}^^M
+\graphicspath{ {images/} }
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\textheight}{1in}
+
+\begin{document}
+\title{}
+\begin{titlepage}
+    \centering
+	{\scshape\LARGE Lab 1: Basic Material Properties\par}
+	\vspace{1cm}
+	{\scshape Nick O’Friel: Technician \hfill ID\#:10408398 \par}
+	{\scshape Marcin Wisniowski: Recorder \hfill ID\#:10417225\par}
+	{\scshape Paul Szenher: Technician \hfill ID\#:10416879\par}
+	\vfill
+	{\scshape Design V, Week 1\par}
+	\vspace{.5cm}
+	{\scshape Laboratory Performed: January 23rd, 2018\\Stevens Institute of Technology\\E-231 Section D Group 7\par}
+	\vspace{.5cm}
+	{\scshape supervised by\\Mr. Di Wu, Mr. Kai Zong \par}
+    \vfill
+% Bottom of the page
+	{\scshape“I pledge my honor that I have abided by the Stevens Honor System.”\par}
+	\vspace{.5cm}
+	{\scshape Nick O’Friel \hfill Date: 01/28/18\\Marcin Wisniowski \hfill Date: 01/28/18\\Paul Szenher \hfill Date: 01/28/18\\}
+	\vspace{3cm}
+\end{titlepage}
+
+\section{Introduction}
+This lab included three different experiments that were used to visualize and confirm some basic material properties including hardness, thermal conductivity and density. The goal was to get a basic understanding of the properties of materials and how to test for them if given a material with many unknown variables. 
+\paragraph{}
+To test thermal conductivity, the group used an apparatus that branched out into five rods, each with a different metal. By placing wax on the tip of each rod and holding the apparatus over a flame, the group could distinguish the order in which the wax melted. The five materials, in order on the apparatus, were:
+\begin{itemize}
+	\item{Copper, Aluminum, Brass, Steel and Stainless Steel}
+\end{itemize}
+The group predicted that the wax would melt in order, from copper to stainless steel, and the prediction was proven correct after performing the experiment. 
+\paragraph{}
+The second experiment conducted looked to calculate the density of a material where volume was not easily found. The group found that according to the Archimedes Principle, the apparent change in mass of an object when immersed in a liquid will be equal to the weight of the liquid displaced. Using this principle, the group was given a proportionality to solve for the density of the solid:
+$$\frac{\rho}{\rho_{H_2O}} = \frac{W_s}{W_{H_2O}}$$
+Using a scale the group measured the dry weight of each material and then proceeded to suspend the material in water. Based on the differences between the dry and wet weights, the density of the material was able to be found through a simple excel calculation. However, the results varied significantly with what the group expected would occur and the results were not consistent when compared to other materials.
+\paragraph{}
+The third and final experiment tasked the group with measuring the hardness of each material on the Mohs Hardness Scale. To do this, a reference hardness kit was supplied to the group, which was made up of multiple scribe materials rated from 2-9. The group then tried to scratch the surface of the unknown materials with a scribe of intermediate hardness. If a scratch was left in the material, a lower scribe would be used until a scratch was no longer created in the unknown material. Similarly, if no scratch was left initially, a harder scribe was tested. Once a material fell between two hardnesses on the scale, the group averaged the upper and lower values to get an estimate. Each of the given materials was tested in this fashion, and the results were as expected.
+
+\section{Results}
+\subsection{Experiment 1: Thermal Conductivity}
+Ultimately, the thermal conductivity of the metals were found to be, in order from highest to lowest, copper, aluminum, brass, steel, and stainless steel. This was in the same order as the metals were arranged, moving in the clockwise direction on the apparatus. While the experiment itself was the most accurate, it was hard to distinguish accurately when the wax actually melted on the different metals. It was only after looking at the glare on the metals to see a shimmer in the waxy liquid that it was confirmed to have melted. If the thermal conductivities of the metals were closer together, the test would be far less accurate.
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{c|c}
+Material & Ranked Thermal Conductivity \\
+\hline
+Copper & 1 \\
+Aluminum & 2 \\
+Brass & 3 \\
+Steel & 4 \\
+Stainless Steel & 5 \\
+\end{tabular}
+\caption{Comparison of Thermal Conductivity}
+\end{center}
+\end{table}}
+
+
+\subsection{Experiment 2: Density}
+
+While dry weights of materials held relative accuracy, the wet weights received serious error due to shaking of the table and water bath during measurement. Another source of error may have been the basket touching the edges of the beaker, therefore incorrectly relaying information about the weight. This ultimately resulted in density results that are, depending upon the material, inaccurate. In order to improve the accuracy of this experiment, measurements should be taken on solid surfaces, ensuring that the water the sample is submerged in is not at all disturbed at the time of measurement. Similarly, the basket apparatus should be connected with a joint in order to remove the swaying inside the water altering the output of the scale.   
+
+
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{c|c|c|c}
+Material & Calculated $\rho (\frac{g}{cm^3})$ & Theoretical $(\frac{g}{cm^3})$ & Percent Error\\
+\hline
+PVC & 1.388 & ${\sim}1.375$ & 0.97\% \\
+Steel &  3.999 & 8.05 & -50.32\% \\
+Brass &  3.299 & 8.73 & -62.21\% \\
+Aluminum & 1.314 & 2.71 & -51.52\% \\
+Quartz & 2.582 & 2.65 & -2.58\% \\
+Graphite & 1.814 &  2.26 & -19.75\% \\
+Mineral (random) & 2.728 & N/A & N/A \\
+Bi sinker (pure) & 9.820 & 9.78 & 0.41\% \\
+Tin-Bismuth sinker &  8.546 & ${\sim}8.35$ & 2.35\% \\
+Tin sinker (pure) & 7.442 & 7.27 & 2.36\% \\
+\end{tabular}
+\caption{Experimental and Theoretical Densities}
+\end{center}
+\end{table}}
+
+\subsection{Experiment 3: Hardness}
+By testing all the different materials with the hardness kit, we observed that steel and quartz were the hardest materials, as we suspected. The random mineral was the next hardest at 6.5, followed by PVC at 5.5 and Brass and Aluminum both at 3.5. There were a total of 4 materials that could not be scratched using a 3 tip, but as we didn’t have a lower tip, we had to conclude that the hardness for these materials was simply less than 3. Errors may have occurred due to the nature of observations being relative. Furthermore, due to the constant use of these materials by other groups in the same hardness experiment, some were harder to determine when scratched due to already being scratched in multiple places. 
+
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{c|c|c}
+Material & Experimental Hardness & Theoretical Hardness\\
+\hline
+Graphite & <3 & 0.5-1\\
+Tin sinker (pure) & <3 & 1.5-1.8\\
+Tin-Bismuth sinker &  <3 & 1.5-2.5\\
+Bi sinker (pure) & <3 & 2.5\\
+Aluminum & $3.5 \pm 0.5$ & 2-2.9\\
+Brass &  $3.5 \pm 0.5$ & 3-4\\
+PVC & $5.5 \pm 0.5$ & N/A\\
+Mineral (random) & $6.5 \pm 0.5$ & N/A\\
+Steel &  $7.5 \pm 0.5$ & 5-8.5\\
+Quartz & $7.5 \pm 0.5$ & 7\\
+\end{tabular}
+\caption{Ranking of Material Hardness}
+\end{center}
+\end{table}}
+
+\section{Discussion and Conclusions}
+
+The conclusions we came to following these experiments are important for a few different reasons. Not only were we able to visualize and confirm some basic material properties, but we can now utilize these techniques and equations for a variety of applications. Any application that involves heat would require knowledge of the thermal conductivity of the proposed material. The same goes for hardness, as two materials coming in contact with one another might be damaged if they are on opposite ends of the Mohs Hardness Scale. Similarly, density and the overall shape and weight of a material should always be know before considering its use. For this specific set of experiments, we were relatively familiar with the materials and our predictions for each were correct. However, the way we obtained these results is crucial and will be important when working with new and uncommon materials.
+
+\section{Broader Impacts}
+1. This investigation characterized various materials using relative, quantitative, and semi-quantitative means, all of which have their own drawbacks and advantages. 
+
+The advantages of relative measurements are great when all the materials you need to know are available to you. This way, you can compare multiple materials to each other and know which one is higher/lower in ranking. However, relative measurements are not very useful when comparing measurements to unavailable materials. 
+
+Quantifying measurements allows the creation of a universal table of materials, in order to give meaning to observations and giving the ability to quantify values including x2/x3 values. However, in order for this to be viable solution more expensive and precise decisions need to be made in order to create the database of values. 
+\paragraph{}
+2. In the lab investigation, thermal conductivity was tested between multiple metals. This property would be very useful to know and differentiate between multiple materials in engineering. Specifically, thermal conductivity can help in the creation of heat sinks for computer parts and other similar practices. This way, by having a higher thermal conductivity, a material would be a better functioning heat sink than other materials. Due to this, much of the industry uses copper and/or aluminum to create heat sinks which conduct heat much better than materials like stainless steel or lead.
+
+%1. In this investigation you have characterized various material properties using relative, quantitative, and semi-quantitative means. Briefly compare the advantages and disadvantages of using relative and quantitative means of evaluating material properties. (For example: You might discuss the ease and cost of performing the experiment, the ability to compare different materials or classes of materials, or the usefulness in materials selection/design). 
+
+%2. Choose one of the material properties studied above and discuss how it could be used to select a material for specific engineering application. 
+
+\section{References}
+Theoretical Hardness:
+$https://www.tedpella.com/company\_html/hardness.htm$
+
+
+\end{document}
